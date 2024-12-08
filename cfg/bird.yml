@@ -1,0 +1,23 @@
+B_VALIDATION: true
+CONFIG_NAME: bird_sloss01
+DATASET_NAME: birds
+DATA_DIR: /content/drive/MyDrive/GRAD/text2image/data/birds
+GPU_ID: 0
+RESTORE: true
+TEXT:
+  CAPTIONS_PER_IMAGE: 10
+  DAMSM_NAME: /content/drive/MyDrive/GRAD/text2image/DAMSMencoders/bird/text_encoder200.pth
+  EMBEDDING_DIM: 256
+TRAIN:
+  BATCH_SIZE: 8
+  DSAVE_INTERVAL: 1
+  GSAVE_INTERVAL: 1
+  MAX_EPOCH: 600
+  NET_G: /content/drive/MyDrive/GRAD/text2image/Trained_Models/fixed/cub/netG_590.pth
+  NF: 64
+  WARMUP_EPOCHS: 100
+TREE:
+  BASE_SIZE: 256
+  BRANCH_NUM: 1
+WORKERS: 1
+loss: hinge
